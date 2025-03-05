@@ -9,22 +9,22 @@
         $(document).on('click', '.navbar-area .navbar-nav li.menu-item-has-children>a', function (e) {
             e.preventDefault();
         })
-       
+
         /*-------------------------------------
             menu
         -------------------------------------*/
-        $('.navbar-area .menu').on('click', function() {
+        $('.navbar-area .menu').on('click', function () {
             $(this).toggleClass('open');
             $('.navbar-area .navbar-collapse').toggleClass('sopen');
         });
-    
+
         // mobile menu
         if ($(window).width() < 992) {
             $(".in-mobile").clone().appendTo(".sidebar-inner");
             $(".in-mobile ul li.menu-item-has-children").append('<i class="fas fa-chevron-right"></i>');
             $('<i class="fas fa-chevron-right"></i>').insertAfter("");
 
-            $(".menu-item-has-children a").on('click', function(e) {
+            $(".menu-item-has-children a").on('click', function (e) {
                 // e.preventDefault();
 
                 $(this).siblings('.sub-menu').animate({
@@ -35,8 +35,8 @@
 
         var menutoggle = $('.menu-toggle');
         var mainmenu = $('.navbar-nav');
-        
-        menutoggle.on('click', function() {
+
+        menutoggle.on('click', function () {
             if (menutoggle.hasClass('is-active')) {
                 mainmenu.removeClass('menu-open');
             } else {
@@ -47,15 +47,15 @@
         /*--------------------------------------------------
             select onput
         ---------------------------------------------------*/
-        if ($('.single-select').length){
+        if ($('.single-select').length) {
             $('.single-select').niceSelect();
         }
 
         /**banner-move**/
-        if ($('.banner-bg-img').length){
-            function touches(e){
-                var x = e.touches ? e.touches[0].clientX : e.clientX, 
-                y = e.touches ? e.touches[0].clientY : e.clientY;
+        if ($('.banner-bg-img').length) {
+            function touches(e) {
+                var x = e.touches ? e.touches[0].clientX : e.clientX,
+                    y = e.touches ? e.touches[0].clientY : e.clientY;
                 var w = window.innerWidth / 2;
                 var h = window.innerHeight / 2;
                 var l = -(x - w) / (w / 1) - 1;
@@ -63,7 +63,7 @@
                 TweenMax.to($('.banner-bg-img'), 1, {
                     top: t + "%",
                     left: l + "%"
-                }); 
+                });
             }
             window.addEventListener("mousemove", touches);
             window.addEventListener("touchstart", touches);
@@ -73,17 +73,17 @@
         /*--------------------------------------------
             Search Popup
         ---------------------------------------------*/
-        var bodyOvrelay =  $('#body-overlay');
+        var bodyOvrelay = $('#body-overlay');
         var searchPopup = $('#td-search-popup');
         var sidebarMenu = $('#sidebar-menu');
 
-        $(document).on('click','#body-overlay',function(e){
+        $(document).on('click', '#body-overlay', function (e) {
             e.preventDefault();
             bodyOvrelay.removeClass('active');
             searchPopup.removeClass('active');
             sidebarMenu.removeClass('active');
         });
-        $(document).on('click','.search-bar-btn',function(e){
+        $(document).on('click', '.search-bar-btn', function (e) {
             e.preventDefault();
             searchPopup.addClass('active');
             bodyOvrelay.addClass('active');
@@ -117,8 +117,11 @@
             focusOnSelect: true,
             dots: true,
             infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            fade: true,
             nextArrow: $(".next"),
-            prevArrow :$(".prev"),
+            prevArrow: $(".prev"),
             appendDots: $(".banner-slider-control .slider-dots"),
             responsive: [
                 {
@@ -140,14 +143,14 @@
             ]
         });
         var $scprogressBar = $(".slider-controlprogress");
-            var $progressBarLabel = $(".slider__label_Progress");
-            $(".banner-slider").on(
+        var $progressBarLabel = $(".slider__label_Progress");
+        $(".banner-slider").on(
             "beforeChange",
             function (event, slick, currentSlide, nextSlide) {
                 var calc = (nextSlide / (slick.slideCount - 1)) * 100;
                 $scprogressBar
-                .css("background-size", calc + "% 100%")
-                .attr("aria-valuenow", calc);
+                    .css("background-size", calc + "% 100%")
+                    .attr("aria-valuenow", calc);
                 $progressBarLabel.text(calc + "% completed");
             }
         );
@@ -168,7 +171,7 @@
             dots: true,
             infinite: true,
             nextArrow: $(".next"),
-            prevArrow :$(".prev"),
+            prevArrow: $(".prev"),
             appendDots: $(".testimonial-slider-control .slider-dots"),
             responsive: [
                 {
@@ -190,14 +193,14 @@
             ]
         });
         var $scprogressBar = $(".slider-controlprogress");
-            var $progressBarLabel = $(".slider__label_Progress");
-            $(".testimonial-slider").on(
+        var $progressBarLabel = $(".slider__label_Progress");
+        $(".testimonial-slider").on(
             "beforeChange",
             function (event, slick, currentSlide, nextSlide) {
                 var calc = (nextSlide / (slick.slideCount - 1)) * 100;
                 $scprogressBar
-                .css("background-size", calc + "% 100%")
-                .attr("aria-valuenow", calc);
+                    .css("background-size", calc + "% 100%")
+                    .attr("aria-valuenow", calc);
                 $progressBarLabel.text(calc + "% completed");
             }
         );
@@ -218,7 +221,7 @@
             dots: false,
             infinite: true,
             nextArrow: $(".next"),
-            prevArrow :$(".prev"),
+            prevArrow: $(".prev"),
             appendDots: $(".testimonial-slider-control .slider-dots"),
             responsive: [
                 {
@@ -390,7 +393,7 @@
 
     });
 
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function () {
         /*---------------------------------------
             back-to-top
         -----------------------------------------*/
@@ -439,26 +442,26 @@
     });
 
     // Obtener elementos del DOM
-   const popup = document.getElementById("popup");
-   const closeBtn = document.querySelector(".close-btn");
+    const popup = document.getElementById("popup");
+    const closeBtn = document.querySelector(".close-btn");
 
-   // Mostrar el pop-up después de unos segundos
-   window.onload = function () {
-    setTimeout(() => {
-      popup.style.display = "flex";
-      }, 2000); // 2 segundos de retraso
+    // Mostrar el pop-up después de unos segundos
+    window.onload = function () {
+        setTimeout(() => {
+            popup.style.display = "flex";
+        }, 2000); // 2 segundos de retraso
     };
 
     // Cerrar el pop-up al hacer clic en el botón de cierre
     closeBtn.addEventListener("click", () => {
-     popup.style.display = "none";
+        popup.style.display = "none";
     });
 
     // Cerrar el pop-up al hacer clic fuera del contenido
     window.addEventListener("click", (event) => {
-      if (event.target === popup) {
-        popup.style.display = "none";
-      }
+        if (event.target === popup) {
+            popup.style.display = "none";
+        }
     });
 
 
