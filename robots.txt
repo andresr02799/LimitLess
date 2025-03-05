@@ -1,0 +1,33 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Disallow:
+
+# Block sensitive directories and internal pages
+Disallow: /admin/
+Disallow: /config/
+Disallow: /backend/
+Disallow: /temp/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /user-profile/
+Disallow: /search/
+
+# Block unnecessary file types
+Disallow: /*.pdf$
+Disallow: /*.zip$
+Disallow: /*.doc$
+Disallow: /*.xls$
+
+# Allow images & videos for better search visibility
+User-agent: Googlebot-Image
+Disallow:
+
+User-agent: Googlebot-Video
+Disallow:
+
+# Set crawl delay for non-Google bots (Google ignores this)
+User-agent: *
+Crawl-delay: 10
+
+# Declare the sitemap for SEO
+Sitemap: https://www.limitlesstax.com/sitemap.xml

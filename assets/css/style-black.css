@@ -1,0 +1,82 @@
+p {
+    color: #fff;
+}
+.nav-right-part .search-bar-btn:after,
+.navbar-area .nav-container .logo:after,
+.banner-small-inner h6:after {
+    background: #404040;
+}
+.navbar-area {
+    border-bottom: 1px solid #404040;
+}
+.navbar-area .nav-container .navbar-collapse .navbar-nav li a {
+    color: #fff;
+}
+.navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children:before,
+.navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children:after {
+    background: #fff;
+}
+.single-blog-inner .read-more img,
+.about-thumb-area .about-img-6,
+.about-thumb-area .about-img-4,
+.banner-video-area .banner-animate-image,
+.banner-small-inner .scroll-down {
+    filter: brightness(100);
+}
+.single-input-inner textarea,
+.single-input-inner input,
+.contact-area,
+.bg-sky {
+    background: #010101;
+}
+.single-service-inner-2 .details h2,
+.single-service-inner-2 .details a,
+.single-input-inner textarea,
+.single-input-inner input {
+    color: #fff;
+}
+.counter-area-inner .overlay-title {
+    color: #1a1a1a;
+}
+.circle-counter svg circle:last-of-type {
+    stroke: #2a2a2a;
+}
+.single-service-inner-2 .details,
+.single-blog-inner,
+.single-team-inner {
+    background-color: rgb(22 22 22);
+}
+.single-blog-inner .read-more,
+.single-blog-inner h4,
+.single-blog-inner p,
+.single-blog-inner .details .date,
+.single-team-inner h4,
+.single-team-inner p,
+.single-team-inner .details .social a {
+    color: #fff;
+}
+.single-testimonial-inner .thumb img {
+    filter: brightness(10);
+}
+.contact-inner .contact-from-inner {
+    background: #2e2e2e;
+}
+
+@media all and (max-width: 991px) {
+    .navbar-area .nav-container .navbar-collapse .navbar-nav li a {
+        color: #444444;
+    }
+    .navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children:before, 
+    .navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children:after {
+        background: #444444;
+    }
+}
+.contact-inner .contact-from-inner .ci-bg-img-1 {
+    opacity: 0.1;
+}
+.banner-slider .slide-item:after {
+    background-color: rgba(250, 100, 0, 0.05);
+}
+.border-right-1 {
+    border-right: 1px solid #484848;
+}

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Limitless Tax - Financial Services</title>
+    <link rel="icon" href="assets/img/favicon.png" sizes="20x20" type="image/png">
+
+    <!-- Stylesheets CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/magnific.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body class="bg-light">
+
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6F8ZD1R8CJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6F8ZD1R8CJ');
+    </script>
+
+    <!-- Body Overlay -->
+    <div class="body-overlay" id="body-overlay"></div>
+
+    <!-- Pop-up Container -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn">&times;</span>
+          <!-- Logo -->
+          <img src="assets/img/logo-header.png" alt="Limitless Tax Logo" class="popup-logo">
+          <h2>Sign-up</h2>
+          <p>Sign In / Sign Up to start your taxes now.</p>
+          <!-- Screenshot of Customer Area -->
+          <a href="https://limitlesstax.taxdome.com" class="btn btn-base border-radius">Sign Up Now</a>
+          <!-- Mobile App Section -->
+          <div class="mobile-app-section">
+            <p>Mobile App Available</p>
+            <div class="app-store-links">
+              <a href="https://play.google.com/store/apps/details?id=com.taxdome" target="_blank">
+                <img src="assets/img/google-play-icon.png" alt="Google Play Store" class="play-store-logo">
+              </a>
+              <a href="https://apps.apple.com/us/app/taxdome-client-portal/id1472202357" target="_blank">
+                <img src="assets/img/apple-store-icon.svg" alt="Apple App Store" class="app-store-logo">
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar-menu" id="sidebar-menu">
+        <button class="sidebar-menu-close"><i class="fa fa-times"></i></button>
+        <div class="sidebar-inner">
+            <div class="thumb">
+                <img src="assets/img/logo-header.png" alt="Logo Limitlesstax">
+            </div>
+            <div class="sidebar-address">
+                <ul>
+                    <li>
+                        <br>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <a href="https://maps.app.goo.gl/hh9yUtaGnehdVJBy7" title="View location on Google Maps">2387 W 68th St, Ste 502, Hialeah, FL 33016</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <a href="https://maps.app.goo.gl/xFGtqBL2CZH6XKhK9" title="View location on Google Maps">22121 S Dixie Hwy, Homestead, FL 33032</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <a href="https://maps.app.goo.gl/42W3H1t5gKk3HaPC8" title="View location on Google Maps">8927 JM Keynes Dr, Ste 500, Charlotte, NC 28262</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:contact@limitlesstax.com" title="Send an email to contact@limitlesstax.com">contact@limitlesstax.com</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone"></i>
+                        <a href="tel:+1 305 829-1040" title="Call +1 305 829-1040">+1 305 829-1040</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-fax"></i>+1 305 602-9232</li>
+                </ul>
+            </div>
+            <div class="sidebar-address">
+                <ul>
+                    <li>
+                        <i class="fa fa-user"></i>
+                        <a href="https://limitlesstax.taxdome.com" title="Sign In/Sign Up">Sign In / Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="social-media">
+                <li><a href="https://www.instagram.com/limitless.tax/" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.tiktok.com/@limitlesstax" title="Follow us on TikTok"><i class="fab fa-tiktok"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Sidebar Menu -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-area navbar-area-2 navbar-expand-lg">
+        <div class="container nav-container navbar-bg">
+            <div class="responsive-mobile-menu">
+                <button class="menu toggle-btn d-block d-lg-none" data-target="#itech_main_menu" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-left"></span>
+                    <span class="icon-right"></span>
+                </button>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo-header.png" alt="Logo Limitlesstax"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="itech_main_menu">
+                <ul class="navbar-nav menu-open text-lg-end">
+                    <li class="menu-item">
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="service.html">Services</a>
+                    </li>
+                    <li>
+                        <a class="menubar" id="navigation-button" href="#">Contact Us</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://limitlesstax.taxdome.com" title="Access Client Portal">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right-part nav-right-part-desktop align-self-center">
+                <a class="btn btn-black" href="https://outlook.office365.com/owa/calendar/LimitlessTax1@limitlesstax.com/bookings/" title="Make An Appointment">MAKE AN APPOINTMENT</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Announcement Appointment Mobile Only Bar Start -->
+    <div class="announcement-bar">
+        <div class="marquee">
+            <p>
+                <a href="https://outlook.office365.com/owa/calendar/LimitlessTax1@limitlesstax.com/bookings/" title="Make An Appointment">
+                    CLICK HERE TO MAKE AN APPOINTMENT &nbsp;&nbsp;&nbsp;&nbsp; 
+                    CLICK HERE TO MAKE AN APPOINTMENT &nbsp;&nbsp;&nbsp;&nbsp; 
+                    CLICK HERE TO MAKE AN APPOINTMENT &nbsp;&nbsp;&nbsp;&nbsp; 
+                    CLICK HERE TO MAKE AN APPOINTMENT &nbsp;&nbsp;&nbsp;&nbsp; 
+                    CLICK HERE TO MAKE AN APPOINTMENT
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- Announcement Appointment Mobile Only Bar End -->
+
+    <!-- Headline Start -->
+    <div class="banner-area pd-bottom-120 banner-small-inner banner-small-inner-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-9">
+                    <h6>Hi, we’re Limitless Tax</h6>
+                    <h2>Elevate Your Financial Health</h2>
+                </div>
+                <div class="col-xl-4 offset-xl-1 col-lg-9 mt-3 mt-xl-0 align-self-center">
+                    <p>If you <strong>select our tax preparation service,</strong> you’re choosing a locally owned and operated firm committed to your satisfaction. Our highly experienced professionals work to minimize your legal tax burden while ensuring prompt completion of your tax returns. Whether you’re current on your taxes or haven’t filed for years, we’ll respond promptly to your needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Headline End -->
+    
+    <!-- Main Photos Start -->
+    <div class="container">
+        <div class="banner-video-area banner-video-area-4 bg-relative">
+            <div class="scroll-down">
+                <a href="#about-area">
+                    <img src="assets/img/icon/12.svg" alt="Scroll Down Button">
+                </a>
+            </div> 
+            <div class="slider banner-slider">       
+                <div class="slide-item text-center" style="background-image: url('./assets/img/bg/HOME1-LIMITLESS.webp');" aria-label="Limitless Service Background Image"></div>
+                <div class="slide-item text-center" style="background-image: url('./assets/img/bg/MIAMI-AEREAL.webp');" aria-label="Miami Aerial Background Image"></div>
+                <div class="slide-item text-center" style="background-image: url('./assets/img/bg/HOME-2-LIMITLESS.webp');" aria-label="Limitless Service Background Image 2"></div>
+            </div>
+            <div class="banner-call">
+                <a href="tel:+1 305 829-1040" title="Call +1 305 829-1040">Call us: +1 305 829-1040</a>
+            </div>
+            <div class="banner-slider-control">
+                <div class="slider-dots"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Photos Area End -->
+
+
+    <!-- About Area Start -->
+    <div id="about-area" class="about-area pd-top-120 pd-bottom-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-9 wow animated fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                    <div class="about-thumb-area">
+                        <img class="about-img-1" src="assets/img/about/ABOUT4.png" width="300" height="auto" alt="About Image 1 Golden Tax Object">
+                        <img class="about-img-2" src="assets/img/about/ABOUT-US-HOME-COLOR.webp" width="auto" height="330" alt="About Image 2 Miami Aereal">
+                        <img class="about-img-3 top_image_bounce" src="assets/img/about/3.png" alt="Bounce Object Image">
+                        <img class="about-img-4 top_image_bounce" src="assets/img/about/4.png" alt="Bounce Object Image 2">
+                        <div class="exp-wrap">
+                            <div class="exp-inner">
+                                <h2>10 +</h2>
+                                <p>Years Experienced</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center wow animated fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                    <div class="section-title mb-0 mt-5 mt-lg-0">
+                        <h6 class="sub-title">//  Tax Specialists You Can Trust</h6>
+                        <h2 class="title">At Limitless Tax, We Do More Than Just Taxes</h2>
+                        <p class="content">We’ve designed our practice to be client-centric. You’re our first priority, and we’re proud of the many clients who entrust all their accounting and tax needs to our firm.</p>
+                        <p class="quote mt-4 pb-2">When you consider our capabilities, also note our:</p>
+                        <div class="row">
+                            <div class="col-md-6 mt-3">
+                                <h5>Year Round Services</h5>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <h5>24/7 Availability</h5>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <h5>E-filling Center Approval</h5>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <h5>RTRP Certification</h5>
+                            </div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a class="btn btn-base border-radius" href="about.html">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Area End -->
+
+    <!-- Service Area Start -->
+    <div class="service-area bg-black pd-top-120 pd-bottom-120">  
+        <div class="container"> 
+            <div class="row">
+                <div class="col-lg-4 col-md-8">
+                    <div class="tab-content" id="myTabContent">
+                        <!-- Service Tab 1 -->
+                        <div class="tab-pane fade show active" id="sertab1" role="tabpanel" aria-labelledby="sertab1-tab">
+                            <div class="single-service-inner-2">
+                                <img class="top_image_bounce animate-img-1" src="assets/img/service/3.png" alt="Bounce Object Image">
+                                <img class="top_image_bounce animate-img-2" src="assets/img/service/2.png" alt="Bounce Object Image 2">
+                                <div class="thumb">
+                                    <img class="service1" src="assets/img/service/ACCOUNTING-SERVICE-LIMITLESS-TAX.webp" width="auto" height="600" alt="Accounting Service Image">
+                                </div>
+                                <div class="details">
+                                    <div class="details-inner">
+                                        <h2>01.</h2>
+                                        <p>Discover more today and let us help you with your accounting needs.</p>
+                                        <a href="accounting-service.html">Discover More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service Tab 2 -->
+                        <div class="tab-pane fade" id="sertab2" role="tabpanel" aria-labelledby="sertab2-tab">
+                            <div class="single-service-inner-2">
+                                <img class="top_image_bounce animate-img-1" src="assets/img/service/2.png" alt="Bounce Object Image">
+                                <img class="top_image_bounce animate-img-2" src="assets/img/service/3.png" alt="Bounce Object Image 2">
+                                <div class="thumb">
+                                    <img class="service2" src="assets/img/service/SMALL-SERVICE-ACCOUNTING.webp" width="auto" height="600" alt="Small Business Accounting Service Image">
+                                </div>
+                                <div class="details">
+                                    <div class="details-inner">
+                                        <h2>02.</h2>
+                                        <p>Running a small business takes time and dedication. Let us do your number-crunching and help you maintain your bottom line.</p>
+                                        <a href="smallbusiness-service.html">Discover More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service Tab 3 -->
+                        <div class="tab-pane fade" id="sertab3" role="tabpanel" aria-labelledby="sertab3-tab">
+                            <div class="single-service-inner-2">
+                                <img class="top_image_bounce animate-img-1" src="assets/img/service/2.png" alt="Bounce Object Image">
+                                <img class="top_image_bounce animate-img-2" src="assets/img/service/3.png" alt="Bounce Object Image 2">
+                                <div class="thumb">
+                                    <img class="service3" src="assets/img/service/BUSINESS-SERVICE.webp" width="auto" height="600" alt="Business Services Image">
+                                </div>
+                                <div class="details">
+                                    <div class="details-inner">
+                                        <h2>03.</h2>
+                                        <p>From accounts payable to purchasing to accounts receivable, we provide customized solutions to suit your specific needs.</p>
+                                        <a href="business-service.html">Discover More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service Tab 4 -->
+                        <div class="tab-pane fade" id="sertab4" role="tabpanel" aria-labelledby="sertab4-tab">
+                            <div class="single-service-inner-2">
+                                <img class="top_image_bounce animate-img-1" src="assets/img/service/2.png" alt="Bounce Object Image">
+                                <img class="top_image_bounce animate-img-2" src="assets/img/service/3.png" alt="Bounce Object Image 2">
+                                <div class="thumb">
+                                    <img class="service4" src="assets/img/service/BOOKEEPING-SERVICE.webp" width="auto" height="600" alt="Bookkeeping Service Image">
+                                </div>
+                                <div class="details">
+                                    <div class="details-inner">
+                                        <h2>04.</h2>
+                                        <p>Let us handle the number-crunching and paperwork while you focus on what you do best.</p>
+                                        <a href="bookeeping-service.html">Discover More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service Tab 5 -->
+                        <div class="tab-pane fade" id="sertab5" role="tabpanel" aria-labelledby="sertab5-tab">
+                            <div class="single-service-inner-2">
+                                <img class="top_image_bounce animate-img-1" src="assets/img/service/2.png" alt="Bounce Object Image">
+                                <img class="top_image_bounce animate-img-2" src="assets/img/service/3.png" alt="Bounce Object Image 2">
+                                <div class="thumb">
+                                    <img class="service5" src="assets/img/service/PAYROLL-SERVICE.webp" width="auto" height="600" alt="Payroll Service Image">
+                                </div>
+                                <div class="details">
+                                    <div class="details-inner">
+                                        <h2>05.</h2>
+                                        <p>Looking for a way to streamline your payroll and reporting processes? Let us help.</p>
+                                        <a href="payroll-service.html">Discover More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Service Tab 6 -->
+                        <div class="tab-pane fade" id="sertab6" role="tabpanel" aria-labelledby="sertab6-tab">
+                            <div class="single-service-inner-2">
+                                <img class="top_image_bounce animate-img-1" src="assets/img/service/2.png" alt="Bounce Object Image">
+                                <img class="top_image_bounce animate-img-2" src="assets/img/service/3.png" alt="Bounce Object Image 2">
+                                <div class="thumb">
+                                    <img class="service6" src="assets/img/service/TAX-PREPARATION.webp" width="auto" height="600" alt="Tax Preparation Service Image">
+                                </div>
+                                <div class="details">
+                                    <div class="details-inner">
+                                        <h2>06.</h2>
+                                        <p>Our goal is to help you plan and manage your overall tax situation, not just fill in forms.</p>
+                                        <a href="tax-service.html">Discover More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-2 align-self-center">
+                    <div class="section-title style-white mb-0 mt-4 mt-lg-0">
+                        <h6 class="sub-title">//  Our Services</h6>
+                        <h2 class="title">Professional Services</h2>
+                    </div>
+                    <ul class="service-tab-inner nav nav-tabs mt-lg-5 mt-4" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="sertab1-tab" data-bs-toggle="tab" data-bs-target="#sertab1" type="button" role="tab" aria-controls="sertab1" aria-selected="true">Accounting</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sertab2-tab" data-bs-toggle="tab" data-bs-target="#sertab2" type="button" role="tab" aria-controls="sertab2" aria-selected="false">Small Business Accounting</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sertab3-tab" data-bs-toggle="tab" data-bs-target="#sertab3" type="button" role="tab" aria-controls="sertab3" aria-selected="false">Business Accounting</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sertab4-tab" data-bs-toggle="tab" data-bs-target="#sertab4" type="button" role="tab" aria-controls="sertab4" aria-selected="false">Bookkeeping</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sertab5-tab" data-bs-toggle="tab" data-bs-target="#sertab5" type="button" role="tab" aria-controls="sertab5" aria-selected="false">Payroll Service</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sertab6-tab" data-bs-toggle="tab" data-bs-target="#sertab6" type="button" role="tab" aria-controls="sertab6" aria-selected="false">Tax Preparation</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="btn-wrap text-center">
+        <a class="btn btn-base border-radius mt--30 left_image_bounce" href="service.html">View All Services</a> 
+    </div>        
+    <!-- Service Area End -->
+
+
+    <!-- Testimonials Area Start -->
+    <div class="testimonial-area pd-top-120">
+        <img class="tm-img-animation-1" src="assets/img/about/10.png" alt="Bounce Object Image 3">
+        <img class="tm-img-animation-2 top_image_bounce" src="assets/img/about/9.png" alt="Bounce Object Image 4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 wow animated fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                    <div class="section-title mb-0">
+                        <h6 class="sub-title">// Customers Feedback</h6>
+                        <h2 class="title">What they’re talking</h2>
+                        <div class="testimonial-slider mt-4">
+                            <div class="single-testimonial-inner">
+                                <div class="thumb">
+                                    <img src="assets/img/about/8.png" alt="Quotes Image">
+                                </div>
+                                <p class="content">Quality and speed of service! The professionalism with which they attend to you is incredible! Demonstrating high knowledge on the subject. The team is very instructive, always willing to answer all your questions!!!!</p>
+                                <h4>Yoliset Lopez</h4>
+                                <p class="designation">Google Review</p>
+                            </div>
+                            <div class="single-testimonial-inner">
+                                <div class="thumb">
+                                    <img src="assets/img/about/8.png" alt="Quotes Image">
+                                </div>
+                                <p>Les recomiendo este lugar para hacer sus tax ,un personal bien capacitado y muy amables además del lugar estar bien decorado y acogedor</p>
+                                <h4>Adolfo Suarez</h4>
+                                <p class="designation">Google Review</p>
+                            </div>
+                            <div class="single-testimonial-inner">
+                                <div class="thumb">
+                                    <img src="assets/img/about/8.png" alt="Quotes Image">
+                                </div>
+                                <p>The best service, you feel like family. The Riveros are the best, I highly recommend them in every way.</p>
+                                <h4>Dayira Hernandez</h4>
+                                <p class="designation">Google Review</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-slider-control">
+                            <div class="pagination"></div>
+                            <div class="slider-controlprogress">
+                                <span class="slider__label sr-only"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-8">
+                    <div class="about-thumb-area pb-0 pe-0 mt-4 mt-lg-0">
+                        <img class="about-img-1 wow animated zoomIn" data-wow-duration="1.5s" data-wow-delay="0.3s" src="assets/img/about/REVIEWS-HANDS.webp" width="auto" alt="Hands Stretching Image">
+                        <img class="about-img-5 top_image_bounce" src="assets/img/about/5.png" alt="Bounce Object Image 5">
+                        <img class="about-img-6 top_image_bounce" src="assets/img/about/7.png" alt="Bounce Object Image 6">
+                        <div class="avg-ratting-wrap">
+                            <div class="avg-ratting-inner">
+                                <h2>5.0 +</h2>
+                                <p>Google Reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonials Area End -->
+
+    <!-- Banner Area Start -->
+    <div class="counter-area bg-sky pd-top-110 pd-bottom-60">
+        <div class="container">
+            <div class="counter-area-inner">
+                <h2 class="overlay-title">Limitless...</h2>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 wow animated fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.01s">
+                        <div class="single-counter-inner text-center">
+                            <h2><span class="counter">15</span></h2>
+                            <h6>Successful Tax Seasons</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow animated fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                        <div class="single-counter-inner text-center">
+                            <h2><span class="counter">3150</span></h2>
+                            <h6>Satisfied Global Clients</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow animated fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                        <div class="single-counter-inner text-center">
+                            <h2><span class="counter">35</span> +</h2>
+                            <h6>Certifications</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow animated fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                        <div class="single-counter-inner text-center">
+                            <h2><span class="counter">3428</span> +</h2>
+                            <h6>Successfully Project Done</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Area End -->
+
+
+    <!-- FAQ Area Start -->
+    <div class="faq-area pd-top-110 bg-cover pd-bottom-120" style="background-image: url('./assets/img/bg/5.png');" aria-label="FAQ background image">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <div class="section-title style-white mb-0 pe-xl-5">
+                        <h6 class="sub-title">// Frequently Asked Questions</h6>
+                        <h2 class="title">Explore our FAQs</h2>
+                        <p class="content mb-4">Explore our FAQs to find answers, gain insights, and learn more about how we can assist you in achieving your financial goals.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-xl-4">
+                    <div class="accordion attax-accordion mt-5 mt-lg-0 style-white" id="accordionExample">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    1. What services does Limitless Tax offer?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Limitless Tax offers a variety of services, including tax preparation, accounting, payroll, and financial advisory. We are committed to providing personalized and professional solutions to meet the needs of our clients.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2. Can I Sign Up for an account?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Yes, sign up now free to create an account with access to features like, instant chat, service request, document uploading, payment and much more. Get full remote services online.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    3. What is the experience of the Limitless Tax team?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Our team has over a decade of experience in accounting and tax services. We stay up-to-date with the latest tax laws and regulations to provide the best possible service to our clients.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    4. How can I schedule an appointment with Limitless Tax?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    You can schedule an appointment with us using our online booking platform. Simply <a href="https://outlook.office365.com/owa/calendar/LimitlessTax1@limitlesstax.com/bookings/">CLICK HERE</a>.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    5. Does Limitless Tax offer video conference services for clients outside of Miami?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Yes, we understand the importance of accessibility and offer video conference services for clients who are not located in Miami. Sign Up now and we can provide assistance regardless of your geographical location.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ Area End -->
+
+
+    <!-- Maps Area Start -->
+    <div class="contact-g-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.5331991618514!2d-80.33328802386373!3d25.884836777274707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bba36be17ddb%3A0x25d108d336f7752e!2sLimitless%20Tax!5e0!3m2!1sen!2ses!4v1707173659072!5m2!1sen!2ses" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.302029310069!2d-80.38983881335558!3d25.561616519407284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9c336cda17879%3A0x5b99a1866d153bdd!2sLimitless%20Tax!5e0!3m2!1sen!2ses!4v1707173757892!5m2!1sen!2ses" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1095.1825343943037!2d-80.75000870918709!3d35.309540469826864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541c3b54ca3e75%3A0xaac27070d49e3b90!2s8927%20J%20M%20Keynes%20Dr%20%23500%2C%20Charlotte%2C%20NC%2028262%2C%20USA!5e0!3m2!1sen!2ses!4v1734542480353!5m2!1sen!2ses" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Maps Area End -->
+
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area bg-cover" style="background-image: url('./assets/img/bg/12.png');">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center mb-4 mb-lg-0">
+                        <h2 class="animate-text-footer">
+                            <span class="waviy ms-2">
+                                <span style="--i:1">L</span>
+                                <span style="--i:2">e</span>
+                                <span style="--i:3">t </span> 
+                                <span style="--i:4">’</span>
+                                <span style="--i:5">s</span>
+                                <span class="ms-2" style="--i:5">S</span>
+                                <span style="--i:6">t</span>
+                                <span style="--i:7">a</span>
+                                <span style="--i:8">r</span>
+                                <span style="--i:9">t</span>
+                            </span>
+                        </h2>
+                        <p>For further info & support, <a href="https://limitlesstax.taxdome.com">Sign Up.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget_about pe-xl-4">
+                        <h4 class="widget-title">Addresses</h4>
+                        <div class="details">
+                            <a href="https://maps.app.goo.gl/hh9yUtaGnehdVJBy7"><p>2387 W 68th St, Ste 502, Hialeah, FL 33016</p></a><br>
+                            <a href="https://maps.app.goo.gl/xFGtqBL2CZH6XKhK9"><p>22121 S Dixie Hwy, Homestead, FL 33032</p></a><br>
+                            <a href="https://maps.app.goo.gl/42W3H1t5gKk3HaPC8"><p>8927 JM Keynes Dr, Ste 500, Charlotte, NC 28262</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget_about">
+                        <h4 class="widget-title">Email</h4>
+                        <div class="details">
+                            <a href="mailto:contact@limitlesstax.com"><p>contact@limitlesstax.com</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget_about">
+                        <h4 class="widget-title">Phone & Fax</h4>
+                        <div class="details">
+                            <a href="tel:+1 305 829-1040"><p>P: +1 305 829-1040</p></a>
+                            <p>F: +1 305 602-9232</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="widget widget_about">
+                        <h4 class="widget-title">Working Hours</h4>
+                        <div class="details">
+                            <p>Tax Season: Mon - Sat: 9 AM – 10 PM</p>
+                            <p>April 16 to December 9: Mon - Sat: 9 AM – 5 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-lg-4 align-self-center mb-1 mb-lg-0">
+                        <p>&copy; 2024 Limitless Tax. All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-5 align-self-center text-lg-center mb-3 mb-lg-0">
+                        <p><a href="privacy-policy.html">Privacy Policy</a> / <a href="terms-services.html">Terms & Services</a></p>
+                    </div>
+                    <div class="col-lg-3 text-lg-end">
+                        <ul class="social-media">
+                            <li>
+                                <a class="instagram" href="https://www.instagram.com/limitless.tax/">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="tiktok" href="https://www.tiktok.com/@limitlesstax">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Back to Top Area Start -->
+        <div class="back-to-top">
+            <span class="back-top">Back to top</span>
+        </div>
+        <!-- Back to Top Area End -->
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- All JS Here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/magnific.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jQuery.rProgressbar.min.js"></script>
+    <script src="assets/js/counter-up.min.js"></script>
+    <script src="assets/js/waypoint.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <!-- Main JS  -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Ignore the .env file which holds environment variables
+.env
+
+# If you might have multiple .env files (like .env.dev, .env.production, etc.), 
+# add this line as well:
+.env.*
