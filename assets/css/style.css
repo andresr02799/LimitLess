@@ -4549,10 +4549,9 @@ ul {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.85); /* Ajusta la opacidad (0 = transparente, 1 = opaco) */
+  background: rgba(0, 0, 0, 0.7); /* Ajusta la opacidad (0 = transparente, 1 = opaco) */
   z-index: 0;
 }
-
 
 .header-image {
   position: absolute;
@@ -4561,16 +4560,17 @@ ul {
   object-fit: cover;
   z-index: -1;
   opacity: 1;
+  transform: scaleX(-1);
 }
 
 .header-content {
   position: relative;
   color: white;
-  font-family: var(--heading-font); /* Usa la misma tipografía del headline */
+  font-family: var(--heading-font);
 }
 
 .header-content h1 {
-  font-size: 78px; /* Ajustado al tamaño del h2 del headline */
+  font-size: 78px;
   font-weight: bold;
   line-height: 1.1;
   text-transform: capitalize;
@@ -4578,7 +4578,7 @@ ul {
 }
 
 .header-content h6 {
-  font-size: 28px; /* Ajustado al tamaño del h6 del headline */
+  font-size: 28px;
   margin-bottom: 20px;
   position: relative;
   display: inline-block;
@@ -4586,11 +4586,165 @@ ul {
 }
 
 .header-content h4 {
-  font-size: 28px; /* Ajustado al tamaño del h6 del headline */
+  font-size: 28px;
   margin-bottom: 20px;
   position: relative;
   display: inline-block;
   color: white;
+}
+
+.header-banner .banner2-call {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 135px;
+  right: -300px;
+  transform: rotate(90deg);
+  color: #fff;
+  padding-left: 120px;
+}
+
+.header-banner .banner2-call:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  height: 1px;
+  width: 100px;
+  background-color: #fff;
+}
+
+/*------------------------------------------------
+    📱 Ajustes Responsivos - SOLO PARA MÓVILES
+------------------------------------------------*/
+
+@media only screen and (max-width: 992px) {
+  .header-banner {
+    height: 100vh; /* Ocupa toda la pantalla en móviles */
+    text-align: center;
+  }
+
+  .header-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header-content h1 {
+    font-size: 48px; /* Reduce el tamaño del título */
+  }
+
+  .header-content h6, 
+  .header-content h4 {
+    font-size: 22px;
+  }
+
+  .btn-wrap {
+    text-align: center;
+  }
+
+  /* Oculta el banner lateral en móviles */
+  .header-banner .banner2-call {
+    display: none;
+  }
+}
+
+/* Móviles pequeños */
+@media only screen and (max-width: 576px) {
+  .header-content h1 {
+    font-size: 36px;
+  }
+  
+  .header-content h6, 
+  .header-content h4 {
+    font-size: 18px;
+  }
+}
+
+
+/*------------------------------------------------
+    header 3
+------------------------------------------------*/
+.header3-banner {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 85px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5% 5% 13%;
+  overflow: hidden;
+}
+
+/* Imagen con corte diagonal */
+.header3-image-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 30% 0%);
+}
+
+.header3-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+
+/* Contenido de texto */
+.header3-content {
+  width: 60%;
+  color: #222;
+  font-family: var(--heading-font);
+  position: relative;
+  z-index: 2;
+}
+
+.header3-content h1 {
+  font-size: 78px; /* Ajustado al tamaño del h2 del headline */
+  font-weight: bold;
+  line-height: 1.1;
+  text-transform: capitalize;
+  color: #222;
+}
+
+.header3-content h6 {
+  font-size: 28px; /* Ajustado al tamaño del h6 del headline */
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  color: var(--main-color);
+}
+
+.header3-content h4 {
+  font-size: 28px; /* Ajustado al tamaño del h6 del headline */
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  color: #222;
+}
+
+.header3-banner .banner3-call {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 135px;
+  left: -210px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: var(--heading-color);
+  padding-left: 120px;
+}
+
+.header3-banner .banner3-call:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  height: 1px;
+  width: 100px;
+  background-color: var(--heading-color);
 }
 
 
