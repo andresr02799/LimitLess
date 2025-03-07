@@ -4665,7 +4665,6 @@ ul {
 /*------------------------------------------------
     header 3
 ------------------------------------------------*/
-
 .header3-banner {
   position: relative;
   width: 100%;
@@ -4797,6 +4796,7 @@ ul {
   gap: 40px;
   padding: 50px 20px;
   align-items: stretch;
+  margin-bottom: 50px;
 }
 
 .service-text {
@@ -4804,6 +4804,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  row-gap: 30px;
 }
 
 .service-text h5 {
@@ -6387,13 +6388,6 @@ ul li::marker {
 }
 .single-pricing-inner:hover .btn {
   background: var(--main-color);
-}
-
-.service-details img {
-  margin-bottom: 50px;
-}
-.service-details p {
-  margin-bottom: 50px;
 }
 
 .project-details h2 {
