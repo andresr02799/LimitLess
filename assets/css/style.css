@@ -4564,6 +4564,7 @@ ul {
 }
 
 .header-content {
+  width: 75%;
   position: relative;
   color: white;
   font-family: var(--heading-font);
@@ -4746,6 +4747,173 @@ ul {
   width: 100px;
   background-color: var(--heading-color);
 }
+
+
+/*------------------------------------------------
+    pagina accounting
+------------------------------------------------*/
+
+.hero-section {
+  width: 100vw; /* Ancho completo de la pantalla */
+  min-height: 300px; /* Altura mínima */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen al contenedor */
+  opacity: 0.2; /* Opacidad de la imagen */
+  z-index: 1;
+}
+
+.hero-content, .btn-wrap {
+  z-index: 2; /* Para que el contenido quede sobre la imagen */
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.hero-content h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* The Service */
+.the-service {
+  display: flex;
+  gap: 40px;
+  padding: 50px 20px;
+  align-items: stretch;
+}
+
+.service-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-text h5 {
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.service-text h5 .line {
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background: var(--main-color);
+  margin-right: 10px;
+}
+
+.service-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.service-details h1 {
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.service-details h1 .line {
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background: var(--main-color);
+  margin: 10px;
+}
+
+.service-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.service-image {
+  flex: 1;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+
+.service-image img {
+  width: 100%;
+  max-height: auto;
+  object-fit: cover;
+  align-self: stretch;
+  border-radius: 8px;
+}
+
+ul li::marker {
+  color: var(--main-color); /* Cambia el color del punto */
+}
+
+.scroll-down-service img {
+  filter: invert(1);
+}
+
+.scroll-down-service {
+  position: absolute;
+  bottom: 80px; /* Se mantiene cerca del borde inferior */
+  transform: translateX(-50%); /* Corrige la posición para centrarlo completamente */
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: inline-block;
+}
+
+.scroll-down-service:hover {
+  -webkit-filter: drop-shadow(3px 4px 5px #fff);
+  filter: drop-shadow(3px 4px 5px #fff);
+}
+
+
+/* Evitar que la imagen sea demasiado grande en pantallas grandes */
+@media (min-width: 1024px) {
+  .service-image img {
+    max-width: 500px;
+  }
+}
+
+/* Ocultar la imagen en pantallas pequeñas */
+@media (max-width: 768px) {
+  .service-image {
+    display: none;
+  }
+
+  .hero-section {
+    flex-direction: column; /* Contenido en columna en móviles */
+    text-align: center; /* Centrar texto */
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .btn-wrap {
+    justify-content: center;
+  }
+}
+
 
 
 /*------------------------------------------------
